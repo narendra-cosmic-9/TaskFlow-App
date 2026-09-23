@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow",
+  "description": "A premium Material 3 personal task manager, progress tracker, and daily habit builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
