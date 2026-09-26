@@ -1,37 +1,47 @@
- name: Build TaskFlow APK
+name: Build TaskFlow APK
 
 on:
-  push:
-    branches: [ "main" ]
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   build:
+    name: Build and Release APK
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout code
+      - name: Checkout source code
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
+          distribution: temurin
           java-version: '17'
-          distribution: 'temurin'
           cache: gradle
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
 
-      - name: Grant execute permission
-        run: chmod +x gradlew
+      - name: Build APK
+        run: ./gradlew assembleDebug --stacktrace
 
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug --no-daemon
+      - name: Rename APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk TaskFlow.apk
 
-      - name: Upload APK to GitHub
-        uses: actions/upload-artifact@v4
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: TaskFlow-APK-Debug
-          path: app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
+          tag_name: v1.0.${{ github.run_number }}
+          name: TaskFlow v1.0.${{ github.run_number }}
+          body: |
+            TaskFlow Android APK
+
+            Download the APK below and install it on your Android device.
+          files: TaskFlow.apk
+          generate_release_notes: true
