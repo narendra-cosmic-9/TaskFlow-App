@@ -12,10 +12,7 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 - **Calendar View** & **Task Search**
 
 ## 📱 Download APK
-**Latest APK (17.23 MB):**
-1. Go to **Releases** section on this repo
-2. Download `app-debug.apk`
-3. Or go to Actions -> Latest Build -> Artifacts
+### 📥 [Download APK](https://github.com/narendra-cosmic-9/TaskFlow/releases/latest)
 
 > Direct Install: Works on Android 7.0+
 
