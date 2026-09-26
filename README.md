@@ -11,7 +11,7 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 - **Achievements & Badges:** First Step, On Fire and more
 - **Calendar View** & **Task Search**
 
-### 📥 [Download APK](https://github.com/narendra-cosmic-9/TaskFlow/releases/latest)
+### 📥 [Download APK](https://github.com/narendra-cosmic-9/TaskFlow-App/releases/latest)
 
 > Direct Install: Works on Android 7.0+
 
