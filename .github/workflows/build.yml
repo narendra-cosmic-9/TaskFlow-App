@@ -34,14 +34,24 @@ jobs:
       - name: Rename APK
         run: cp app/build/outputs/apk/debug/app-debug.apk TaskFlow.apk
 
+      - name: Upload APK as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: TaskFlow-APK
+          path: TaskFlow.apk
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.${{ github.run_number }}
-          name: TaskFlow v1.0.${{ github.run_number }}
+          tag_name: v2.0.${{ github.run_number }}
+          name: TaskFlow v2.0.${{ github.run_number }}
           body: |
-            TaskFlow Android APK
+            🚀 TaskFlow Android APK
 
-            Download the APK below and install it on your Android device.
+            Built entirely on phone using GitHub Actions!
+
+            Download TaskFlow.apk below.
           files: TaskFlow.apk
           generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
