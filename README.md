@@ -22,6 +22,12 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 4. Tap Install -> Open TaskFlow
 5. Tap + to add your first task!
 
+## 🎥 Demo Video
+
+https://github.com/narendra-cosmic-9/TaskFlow-App/assets/...
+
+OR just drag your video file into the edit box - GitHub will auto-upload it!
+
 ## 🛠️ Built With
 - Kotlin + Jetpack Compose
 - Built entirely on phone using GitHub Actions
