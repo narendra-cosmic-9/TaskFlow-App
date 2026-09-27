@@ -22,14 +22,9 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 4. Tap Install -> Open TaskFlow
 5. Tap + to add your first task!
 
-## 🎥 Demo Video
-
-https://github.com/narendra-cosmic-9/TaskFlow-App/releases/download/v2.0.0/demo.mp4
 
 ## 🎬 Watch Demo
 [Click to Watch Demo Video](https://github.com/narendra-cosmic-9/TaskFlow-App/releases)
-
-
 
 
 ## 🛠️ Built With
