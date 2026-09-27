@@ -24,7 +24,7 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 
 ## 🎥 Demo Video
 
-https://github.com/narendra-cosmic-9/TaskFlow-App/releases/download/v1.0/demo.mp4
+https://github.com/narendra-cosmic-9/TaskFlow-App/releases/download/v2.0.0/demo.mp4
 
 ## 🎬 Watch Demo
 [Click to Watch Demo Video](https://github.com/narendra-cosmic-9/TaskFlow-App/releases)
