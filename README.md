@@ -24,7 +24,9 @@ TaskFlow helps you organize tasks, track streaks, and analyze your productivity 
 
 ## 🎥 Demo Video
 
-https://github.com/narendra-cosmic-9/TaskFlow-App/assets/..
+## Demo
+
+https://...your-video-link.mp4
 
 ## 🛠️ Built With
 - Kotlin + Jetpack Compose
